@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import "tailwindcss";
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', 'Inter', 'Noto Sans Myanmar', sans-serif;
+}
+
+/* Custom utilities for Tailwind v4 */
+@utility smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+@utility glass-effect {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@utility gradient-text {
+  background: linear-gradient(135deg, #f5e49d, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

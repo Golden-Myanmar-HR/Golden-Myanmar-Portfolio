@@ -1,0 +1,5 @@
+import * as React from "react";
+const Component = props => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" {...props}><defs><mask xmlns="http://www.w3.org/2000/svg" id="prefix__a" width={19} height={19} x={-234} y={-1774} maskUnits="userSpaceOnUse" style={{
+      maskType: "alpha"
+    }}><path fill="#D9D9D9" d="M-233.44-1773.94h17.963v17.963h-17.963z" /></mask></defs><g xmlns="http://www.w3.org/2000/svg" mask="url(#prefix__a)"><path fill="#2C2C2C" d="M-230.392-1758.82a1.65 1.65 0 0 1-1.205-.5 1.63 1.63 0 0 1-.498-1.2v-8.88q0-.705.498-1.2c.332-.33.733-.5 1.205-.5h11.867c.472 0 .873.17 1.205.5q.498.495.498 1.2v8.88q0 .705-.498 1.2c-.332.33-.733.5-1.205.5zm11.867-8.94-5.482 3.46a1 1 0 0 1-.223.09.6.6 0 0 1-.228.04.6.6 0 0 1-.229-.04 1 1 0 0 1-.223-.09l-5.482-3.46v7.24h11.867zm-5.933 2.11 5.933-3.75h-11.867zm-5.934-1.91v-1.19.02-.67.67-.02z" /></g></svg>;
+export default Component;
