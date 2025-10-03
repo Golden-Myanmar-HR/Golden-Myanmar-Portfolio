@@ -1,56 +1,50 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const InterviewProcessSection = () => {
+  const { t } = useTranslation();
+
   const processes = [
     {
-      badge: "Process 1",
-      title: "Candidates Selection",
-      description:
-        "Candidate selection is conducted through our partner language schools, which meticulously select individuals who meet the industry-specific requirements in terms of physical condition and language proficiency. Agriculture Trainees Agriculture 4 Interns Trainees  ",
+      badge: t("interviewProcess.processes.0.badge"),
+      title: t("interviewProcess.processes.0.title"),
+      description: t("interviewProcess.processes.0.description"),
       image: "/images/recruitment-service.jpg",
       reverse: false,
     },
     {
-      badge: "Process 2",
-      title: "Pre-Interview Training",
-      description:
-        "Prior to the actual interview, candidates undergo comprehensive interview training to ensure they make a positive impression and navigate the interview process smoothly. This preparation guarantees that they are well-suited for the hiring company's requirements. ",
+      badge: t("interviewProcess.processes.1.badge"),
+      title: t("interviewProcess.processes.1.title"),
+      description: t("interviewProcess.processes.1.description"),
       image: "/images/technical-training.jpg",
       reverse: true,
     },
     {
-      badge: "Process 3",
+      badge: t("interviewProcess.processes.2.badge"),
       title: (
         <span className="leading-[1.5]">
-          Interview Process with
-          <br />
-          Supervising Organization
+          {t("interviewProcess.processes.2.title")}
         </span>
       ),
-      description:
-        "If the supervising organization wishes to further assess candidates' proficiency and interview etiquette, our company facilitates a pre-interview between candidates and the supervising organization. ",
+      description: t("interviewProcess.processes.2.description"),
       image: "/images/skilled-workers.jpg",
       reverse: false,
     },
     {
-      badge: "Process 4",
+      badge: t("interviewProcess.processes.3.badge"),
       title: (
         <span className="leading-[1.5]">
-          Interview Process with
-          <br />
-          Implementing Organization
+          {t("interviewProcess.processes.3.title")}
         </span>
       ),
-      description:
-        "The final interview with the implementing organization occurs only after candidates have successfully completed the aforementioned processes. This approach ensures a seamless interview process, fosters mutual trust, and strengthens partnerships between organizations",
+      description: t("interviewProcess.processes.3.description"),
       image: "/images/construction-trainees.jpg",
       reverse: true,
     },
     {
-      badge: "Final Process",
-      title: "Post Interview Process",
-      description:
-        "After candidate selection, our post interview processes include submitting candidates for demand approval and facilitating their departure to Japan. We also formalize mutual agreements with our Japanese partnership organizations regarding candidate acceptance and other required documents.",
+      badge: t("interviewProcess.processes.4.badge"),
+      title: t("interviewProcess.processes.4.title"),
+      description: t("interviewProcess.processes.4.description"),
       image: "/images/interview5.jpg",
       reverse: false,
     },
@@ -61,7 +55,7 @@ const InterviewProcessSection = () => {
       <div className="max-w-7xl mx-auto px-4 lg:px-16">
         <div className="space-y-16">
           <h2 className="text-3xl md:text-4xl font-semibold text-black">
-            Interview Process
+            {t("interviewProcess.title")}
           </h2>
 
           {processes.map((process, index) => (
@@ -77,7 +71,7 @@ const InterviewProcessSection = () => {
               <div
                 className={`grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16`}
               >
-                <p className="order-2 md:order-1 text-base md:text-[20px] text-[#1e1e1e] leading-relaxed font-semibold">
+                <p className="order-2 text-justify md:order-1 text-base md:text-[20px] text-[#1e1e1e] leading-[2] font-semibold">
                   {process.description}
                 </p>
                 <div className="order-1 md:order-2 rounded-2xl overflow-hidden shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300">

@@ -1,65 +1,68 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function OurProcess() {
+  const { t } = useTranslation();
+
   const processSteps = [
     {
       id: 1,
-      title: "Recruitment & Selection",
+      title: t("ourProcess.steps.0.title"),
       description: [
-        "Advertising to collect candidates",
-        "Verifying candidate documents",
-        "Checking Japanese language skills",
-        "Conducting an interview between candidates and the hiring company",
+        t("ourProcess.steps.0.description.0"),
+        t("ourProcess.steps.0.description.1"),
+        t("ourProcess.steps.0.description.2"),
+        t("ourProcess.steps.0.description.3"),
       ],
       image: "/images/pc1.jpg",
     },
     {
       id: 2,
-      title: "Training & Preparation",
+      title: t("ourProcess.steps.1.title"),
       description: [
-        "Health checks",
-        "Explaining employment contracts",
-        "Creating Japanese classes for the selected candidates while documentation processes are ongoing",
+        t("ourProcess.steps.1.description.0"),
+        t("ourProcess.steps.1.description.1"),
+        t("ourProcess.steps.1.description.2"),
       ],
       image: "/images/pc2.jpg",
     },
     {
       id: 3,
-      title: "Contracts & Legal Documentation",
+      title: t("ourProcess.steps.2.title"),
       description: [
-        "Submission of demand letters to the Myanmar government",
-        "Assisting in preparing paperwork for COE (Certificate of Eligibility)",
-        "Assisting in making contracts with the Ministry of Labor",
-        "Applying to obtain the Overseas Workers Identity Card (OWIC card)",
+        t("ourProcess.steps.2.description.0"),
+        t("ourProcess.steps.2.description.1"),
+        t("ourProcess.steps.2.description.2"),
+        t("ourProcess.steps.2.description.3"),
       ],
       image: "/images/pc3.png",
     },
     {
       id: 4,
-      title: "Visa & Immigration Process",
+      title: t("ourProcess.steps.3.title"),
       description: [
-        "Assisting with visa application, documentation, and submission",
-        "Ensuring candidates meet immigration requirements",
+        t("ourProcess.steps.3.description.0"),
+        t("ourProcess.steps.3.description.1"),
       ],
       image: "/images/pc4.png",
     },
     {
       id: 5,
-      title: "Travel Arrangements",
+      title: t("ourProcess.steps.4.title"),
       description: [
-        "Arranging flight tickets",
-        "Getting departure approval from the relevant authority",
+        t("ourProcess.steps.4.description.0"),
+        t("ourProcess.steps.4.description.1"),
       ],
       image: "/images/pc5.png",
     },
     {
       id: 6,
-      title: "Supporting During Stay in Japan",
+      title: t("ourProcess.steps.5.title"),
       description: [
-        "Cooperating between the Japan hiring company, the candidates, and the supervising company",
-        "Continue our support to keep in touch with workers through calls, messaging apps, for their welfare and health",
-        "Act as a bridge between the trainee and the Japanese company if language or cultural issues arise",
-        "Provide assistance in case of workplace disputes, health concerns, or emergency situations",
+        t("ourProcess.steps.5.description.0"),
+        t("ourProcess.steps.5.description.1"),
+        t("ourProcess.steps.5.description.2"),
+        t("ourProcess.steps.5.description.3"),
       ],
       image: "/images/pc6.png",
     },
@@ -70,20 +73,10 @@ function OurProcess() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
           <h2 className=" leading-[1.5] text-xl md:text-2xl lg:text-4xl font-bold  mb-6">
-            Our detailed Process for working in Japan
+            {t("ourProcess.title")}
           </h2>
-          <p className="text-base lg:text-[24px] leading-relaxed text-[#1E1E1E]">
-            As one of the most trusted overseas employment agencies, we can help
-            ensure all the documentation for both the Technical Intern Training
-            Program (TITP) and Specified Skilled Worker (SSW) is properly
-            managed, coordinated, and compliant with both Myanmar and Japanese
-            requirements. A step-by-step, detailed documentation process for
-            sending Myanmar overseas workers under the Specified Skilled Worker
-            (SSW) program and the Technical Intern Training Program (TITP) to
-            Japan shall be observed as follows. Both programs need government
-            approval, worker personal documents, language/skill certification,
-            employment contracts, CoE + visa application, and post-arrival
-            registration in Japan.
+          <p className="text-base leading-[2] text-justify font-semibold text-lg md:text-xl lg:text-[24px] text-[#1E1E1E]">
+            {t("ourProcess.description")}
           </p>
         </div>
 

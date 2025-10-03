@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const AboutCompanySection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="bg-[#f5e49d] py-20">
       <div className="max-w-7xl mx-auto px-4 lg:px-16">
@@ -24,16 +27,11 @@ const AboutCompanySection = () => {
 
           <div className="space-y-8">
             <h2 className="text-3xl md:text-4xl font-semibold text-black">
-              ကျွန်တော်တို့ ကုမ္ပဏီအကြောင်း 
+              {t("aboutCompany.title")}
             </h2>
 
-            <p className="text-base md:text-xl text-[#1e1e1e] leading-relaxed font-medium">
-              ကျွန်တော်များ Golden Myanmar Human Resources Co., Ltd သည်
-              ဂျပန်နိုင်ငံသို့ နည်းပညာ ၊ အတတ်ပညာအလုပ်သင်များနှင့် ကျွမ်းကျင်
-              လုပ်သားများ ပေးပို့ခြင်းကို လုပ်ကိုင်လျှက်ရှိသော နိုင်ငံခြား
-              အလုပ်အကိုင် ရှာဖွေရေးအေးဂျင်စီတစ်ခုဖြစ်ပါသည်။ ယခုအချိန် တွင်
-              ကုမ္ပဏီသည် အလုပ်သမားရေးရာ ဝန်ကြီးဌာနထံမှ အေးဂျင်စီလိုင်စင်ကို
-              လိုင်စင် အမှတ် (၃၀၄/၂၀၂၄) နှင့် ရရှိပြီး ဖြစ်ပါ သည်။  
+            <p className="text-base text-justify md:text-xl text-[#1e1e1e] leading-[1.8] font-medium">
+              {t("aboutCompany.description")}
             </p>
           </div>
 

@@ -1,0 +1,285 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Golden Myanmar HR",
+    "services": "Services",
+    "contact": "Contact Us",
+    "workTogether": "Let's Work Together"
+  },
+  "hero": {
+    "title": "Your Pathway from Myanmar to Japan \"Careers Without Borders\"",
+    "subtitle": "We focused on connecting talented people with Job opportunities and building a Successful Career",
+    "cta": "Let's Work Together"
+  },
+  "about": {
+    "title": "About Golden Myanmar HR",
+    "subtitle": "Leading Myanmar's workforce to global success",
+    "description": "Golden Myanmar HR is a premier human resources company dedicated to connecting skilled Myanmar professionals with international opportunities. We specialize in comprehensive training programs and recruitment services that bridge the gap between local talent and global demands."
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive workforce solutions",
+    "section": {
+      "title": "How Can We Help",
+      "button": "Check Our Services",
+      "description": "Our company's great mission for all employers to get suitable and active employees with much competence. And for all job seekers, we ensure them to secure prospective and well-paid jobs.",
+      "services": [
+        {
+          "title": "Recruitment & Placement Services"
+        },
+        {
+          "title": "Technical Intern Training Worker System"
+        },
+        {
+          "title": "Specified Skilled Workers System"
+        }
+      ]
+    },
+    "recruitment": {
+      "title": "International Recruitment",
+      "description": "Connecting skilled Myanmar workers with global opportunities"
+    },
+    "training": {
+      "title": "Professional Training",
+      "description": "Comprehensive skill development and certification programs"
+    },
+    "consultation": {
+      "title": "HR Consultation",
+      "description": "Expert guidance for workforce development and management"
+    }
+  },
+  "achievements": {
+    "title": "Our Achievements",
+    "description": "During our first quarter of operations, we successfully selected 12 intern trainees from a large number of candidates for the construction and agricultural industries. Then, after interviewing a group of candidates, the following three specific skilled workers (Tokutei) are successfully chosen for elderly care. This achievement was made possible through effective collaboration with our own language school and our partner language schools. We have established a Japanese Language School in collaboration with our overseas employment services to support selected candidates who are preparing to work in Japan.",
+    "achievements": [
+      {
+        "title": "Tokutei Workers (Elderly Care)"
+      },
+      {
+        "title": "Construction Trainees"
+      },
+      {
+        "title": "Agriculture Trainees"
+      }
+    ],
+    "stats": [
+      {
+        "title": "Tokutei (Elderly Care)",
+        "count": "3 Tokutei Workers"
+      },
+      {
+        "title": "Construction",
+        "count": "8 Intern Trainees"
+      },
+      {
+        "title": "Agriculture",
+        "count": "4 Intern Trainees"
+      }
+    ]
+  },
+  "interviewProcess": {
+    "title": "Interview Process",
+    "processes": [
+      {
+        "badge": "Process 1",
+        "title": "Candidates Selection",
+        "description": "Candidate selection is conducted through our partner language schools, which meticulously select individuals who meet the industry-specific requirements in terms of physical condition and language proficiency."
+      },
+      {
+        "badge": "Process 2",
+        "title": "Pre-Interview Training",
+        "description": "Prior to the actual interview, candidates undergo comprehensive interview training to ensure they make a positive impression and navigate the interview process smoothly. This preparation guarantees that they are well-suited for the hiring company's requirements."
+      },
+      {
+        "badge": "Process 3",
+        "title": "Interview Process with Supervising Organization",
+        "description": "If the supervising organization wishes to further assess candidates' proficiency and interview etiquette, our company facilitates a pre-interview between candidates and the supervising organization."
+      },
+      {
+        "badge": "Process 4",
+        "title": "Interview Process with Implementing Organization",
+        "description": "The final interview with the implementing organization occurs only after candidates have successfully completed the aforementioned processes. This approach ensures a seamless interview process, fosters mutual trust, and strengthens partnerships between organizations."
+      },
+      {
+        "badge": "Final Process",
+        "title": "Post Interview Process",
+        "description": "After candidate selection, our post interview processes include submitting candidates for demand approval and facilitating their departure to Japan. We also formalize mutual agreements with our Japanese partnership organizations regarding candidate acceptance and other required documents."
+      }
+    ]
+  },
+  "partnership": {
+    "title": "Our Partnership With JAY",
+    "description": "We have established strategic partnerships with JAY (JAPAN ASIA YOUTH EXCHANGE ASSOCIATION) with reputable Japanese language schools in Myanmar to streamline and expedite the recruitment process for skilled workers and intern trainees. By sourcing candidates directly from these language schools, we ensure that our candidates possess the necessary language proficiency and communication skills. This approach significantly reduces the language training period, as candidates are already proficient in Japanese prior to meeting the demand requirements."
+  },
+  "cta": {
+    "title": "Let's Build with us together for your successful career in Japan.",
+    "button": "Let's Work Together"
+  },
+  "aboutHero": {
+    "title": "Your Gateway to Global Career Opportunities",
+    "subtitle": "We Focused on connecting talented people with Job opportunities and build a Successful Career.",
+    "button": "Let's Work Together"
+  },
+  "aboutCompany": {
+    "title": "About Golden Myanmar HR",
+    "description": "Golden Myanmar Human Resources is a trusted overseas recruitment agency with the license number (309/2024) issued by the Ministry of Labor under the approval of the Republic of the Union of Myanmar on the date of 8th October 2024, connecting talented people with international job opportunities. We specialize in job placement and language training to help you build your career in Japan, and we are likely to expand our business into other countries. We also provided services to help companies recruit skilled talent from Myanmar. We are committed to ethical recruitment practices and provide practical training to ensure success. From language learning to job placement, Golden Myanmar Human Resources Co., ltd is here to help you realize your dreams, whether you are a job seeker or a company."
+  },
+  "missionVision": {
+    "mission": {
+      "title": "Mission",
+      "points": [
+        "Connect skilled workers from Myanmar with job opportunities in Japan",
+        "Offer reliable recruitment services that meet international standards",
+        "Teach language skills that help candidates succeed in real work situations"
+      ]
+    },
+    "vision": {
+      "title": "Vision",
+      "points": [
+        "Build respect and share cultures through valuable international experiences.",
+        "Help Myanmar and the world understand each other better",
+        "Give people chances to live and work in different cultural settings"
+      ]
+    }
+  },
+  "expectedGrowth": {
+    "title": "Expected Growth",
+    "description": "We are currently planning to expand our market in various industries by sending Technical Intern Trainees, Skilled Workers and Tokutei workers to Japan. We aim to establish collaborative partnerships with supervising organizations interested in mutual benefits for both entities.",
+    "categories": [
+      {
+        "title": "Technical Intern Trainees",
+        "image": "/images/technical-trainees.png",
+        "alt": "Technical intern trainees in industrial setting"
+      },
+      {
+        "title": "Specified Skilled Workers",
+        "image": "/images/abtrrain.png",
+        "alt": "Specified skilled workers in professional environment"
+      }
+    ]
+  },
+  "languageCenter": {
+    "title": "Golden Myanmar Language Center",
+    "description": "We are establishing a Japanese Language School in collaboration with our overseas employment services to support selected candidates who are preparing to work in Japan. While their documentation and placement process are underway, candidates will attend intensive language training designed to improve their Japanese communication skills, workplace manners, and cultural understanding. This ensures that by the time they depart, they are not only prepared with the required paperwork but also confident in adapting and succeeding in their new working environment in Japan.",
+    "images": [
+      {
+        "alt": "Students learning in Japanese language school classroom"
+      },
+      {
+        "alt": "Students participating in Japanese language training"
+      }
+    ]
+  },
+  "serviceHero": {
+    "title": "Your Gateway to Global Career Opportunities",
+    "subtitle": "We Focused on connecting talented people with Job opportunities and build a Successful Career.",
+    "button": "Let's Work Together"
+  },
+  "ourService": {
+    "title": "Our Services",
+    "services": [
+      {
+        "title": "Recruitment & Placement",
+        "description": "The Technical Intern Training System provides opportunities for Myanmar nationals to develop technical knowledge and practical skills in Japan. After completing the program, trainees are expected to contribute these skills towards the advancement of their home countries' economies.",
+        "image": "/images/serviceSection/service2.jpg",
+        "alt": "Recruitment & Placement training session"
+      },
+      {
+        "title": "Technical Intern Training System",
+        "description": "The Technical Intern Training System provides opportunities for Myanmar nationals to develop technical knowledge and practical skills in Japan. After completing the program, trainees are expected to contribute these skills towards the advancement of their home countries' economies.",
+        "image": "/images/serviceSection/service3.png",
+        "alt": "Specified skilled workers in construction"
+      },
+      {
+        "title": "Specified Skilled Worker System",
+        "description": "The Specified Skilled Worker System is a framework established to admit foreign nationals who possess designated levels of expertise and technical skills, particularly in industrial sectors that face challenges in securing sufficient domestic labor.",
+        "image": "/images/serviceSection/service1.png",
+        "alt": "Tokutei Workers in caregiving"
+      }
+    ]
+  },
+  "ourProcess": {
+    "title": "Our detailed Process for working in Japan",
+    "description": "As one of the most trusted overseas employment agencies, we can help ensure all the documentation for both the Technical Intern Training Program (TITP) and Specified Skilled Worker (SSW) is properly managed, coordinated, and compliant with both Myanmar and Japanese requirements. A step-by-step, detailed documentation process for sending Myanmar overseas workers under the Specified Skilled Worker (SSW) program and the Technical Intern Training Program (TITP) to Japan shall be observed as follows. Both programs need government approval, worker personal documents, language/skill certification, employment contracts, CoE + visa application, and post-arrival registration in Japan.",
+    "steps": [
+      {
+        "title": "Recruitment & Selection",
+        "description": [
+          "Advertising to collect candidates",
+          "Verifying candidate documents",
+          "Checking Japanese language skills",
+          "Conducting an interview between candidates and the hiring company"
+        ]
+      },
+      {
+        "title": "Training & Preparation",
+        "description": [
+          "Health checks",
+          "Explaining employment contracts",
+          "Creating Japanese classes for the selected candidates while documentation processes are ongoing"
+        ]
+      },
+      {
+        "title": "Contracts & Legal Documentation",
+        "description": [
+          "Submission of demand letters to the Myanmar government",
+          "Assisting in preparing paperwork for COE (Certificate of Eligibility)",
+          "Assisting in making contracts with the Ministry of Labor",
+          "Applying to obtain the Overseas Workers Identity Card (OWIC card)"
+        ]
+      },
+      {
+        "title": "Visa & Immigration Process",
+        "description": [
+          "Assisting with visa application, documentation, and submission",
+          "Ensuring candidates meet immigration requirements"
+        ]
+      },
+      {
+        "title": "Travel Arrangements",
+        "description": [
+          "Arranging flight tickets",
+          "Getting departure approval from the relevant authority"
+        ]
+      },
+      {
+        "title": "Supporting During Stay in Japan",
+        "description": [
+          "Cooperating between the Japan hiring company, the candidates, and the supervising company",
+          "Continue our support to keep in touch with workers through calls, messaging apps, for their welfare and health",
+          "Act as a bridge between the trainee and the Japanese company if language or cultural issues arise",
+          "Provide assistance in case of workplace disputes, health concerns, or emergency situations"
+        ]
+      }
+    ]
+  },
+  "contactSection": {
+    "title": "We invite Japanese human resource recruitment companies to partner with Golden Myanmar Human Resources Co., Ltd. We invite those who want to work abroad to join us for a brighter future.",
+    "button": "Contact by email"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "sendMessage": "Contact Us Via Email",
+    "name": "Name",
+    "message": "Message"
+  },
+  "footer": {
+    "description": "Contact us! We warmly welcome Japanese manpower companies to partner with \"Golden Myanmar Human Resources Co., Ltd.\" We invite those seeking work abroad to join us for a brighter future.",
+    "quickLinks": "Useful Links",
+    "services": "Our Services",
+    "contact": "Contact Info",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved.",
+    "address": "Room No. 1540, Tower E, Pearl Condo, Kabar Aye Pagoda Road, at the corner of Sayar San Road, in Bahan Township"
+  },
+  "common": {
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "viewAll": "View All"
+  }
+}

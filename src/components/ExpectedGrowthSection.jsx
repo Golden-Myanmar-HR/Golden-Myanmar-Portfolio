@@ -1,50 +1,53 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const ExpectedGrowthSection = () => {
+  const { t } = useTranslation();
+
+  const categories = [
+    {
+      title: t("expectedGrowth.categories.0.title"),
+      image: t("expectedGrowth.categories.0.image"),
+      alt: t("expectedGrowth.categories.0.alt"),
+    },
+    {
+      title: t("expectedGrowth.categories.1.title"),
+      image: t("expectedGrowth.categories.1.image"),
+      alt: t("expectedGrowth.categories.1.alt"),
+    },
+  ];
   return (
     <section className="bg-[#fffbef] py-20">
       <div className="max-w-7xl mx-auto px-4 lg:px-16">
         <div className="space-y-16">
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-semibold text-black">
-              Expected Growth
+              {t("expectedGrowth.title")}
             </h2>
 
-            <p className="text-lg md:text-xl text-[#1e1e1e] leading-relaxed font-semibold">
-              We are currently planning to expand our market in various
-              industries by sending Technical Intern Trainees, Skilled Workers
-              and Tokutei workers to Japan. We aim to establish collaborative
-              partnerships with supervising organizations interested in mutual
-              benefits for both entities.
+            <p className="text-lg text-justify md:text-xl text-[#1e1e1e] leading-relaxed font-semibold">
+              {t("expectedGrowth.description")}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
-              <img
-                src="/images/technical-trainees.png"
-                alt="Technical intern trainees in industrial setting"
-                className="w-full h-72 object-cover"
-              />
-              <div className="p-6">
-                <h4 className="text-2xl md:text-3xl font-semibold text-black text-center">
-                  Technical Intern Trainees
-                </h4>
+            {categories.map((category, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
+              >
+                <img
+                  src={category.image}
+                  alt={category.alt}
+                  className="w-full h-72 object-cover"
+                />
+                <div className="p-6">
+                  <h4 className="text-2xl md:text-[28px] font-semibold text-black text-center">
+                    {category.title}
+                  </h4>
+                </div>
               </div>
-            </div>
-
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
-              <img
-                src="/images/abtrrain.png"
-                alt="Specified skilled workers in professional environment"
-                className="w-full h-72 object-cover"
-              />
-              <div className="p-6">
-                <h4 className="text-2xl md:text-3xl font-semibold text-black text-center">
-                  Specified Skilled Workers
-                </h4>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

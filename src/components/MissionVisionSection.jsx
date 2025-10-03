@@ -1,16 +1,19 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const MissionVisionSection = () => {
+  const { t } = useTranslation();
+
   const missionPoints = [
-    "Connect skilled workers from Myanmar with job opportunities in Japan",
-    "Offer reliable recruitment services that meet international standards",
-    "Teach language skills that help candidates succeed in real work situations",
+    t("missionVision.mission.points.0"),
+    t("missionVision.mission.points.1"),
+    t("missionVision.mission.points.2"),
   ];
 
   const visionPoints = [
-    "Build respect and share cultures through valuable international experiences.",
-    "Help Myanmar and the world understand each other better",
-    "Give people chances to live and work in different cultural settings",
+    t("missionVision.vision.points.0"),
+    t("missionVision.vision.points.1"),
+    t("missionVision.vision.points.2"),
   ];
 
   return (
@@ -24,7 +27,7 @@ const MissionVisionSection = () => {
           <div className="flex flex-col gap-8">
             <div className="space-y-8">
               <h2 className="text-3xl md:text-4xl font-semibold text-black">
-                Mission
+                {t("missionVision.mission.title")}
               </h2>
 
               <div className="space-y-6 md:min-h-84 lg:min-h-72">
@@ -33,7 +36,7 @@ const MissionVisionSection = () => {
                     <div className="bg-[#FFDE59] text-black w-8 h-8 rounded-full flex items-center justify-center text-base font-semibold flex-shrink-0 mt-1">
                       {index + 1}
                     </div>
-                    <p className="text-base md:text-xl text-[#1e1e1e] leading-relaxed font-semibold">
+                    <p className="text-base md:text-xl text-[#1e1e1e] leading-[1.8] font-semibold">
                       {point}
                     </p>
                   </div>
@@ -53,7 +56,7 @@ const MissionVisionSection = () => {
           <div className="flex flex-col gap-8">
             <div className="space-y-8">
               <h2 className="text-3xl md:text-4xl font-semibold text-black">
-                Vision
+                {t("missionVision.vision.title")}
               </h2>
 
               <div className="space-y-6 md:min-h-84 lg:min-h-72">

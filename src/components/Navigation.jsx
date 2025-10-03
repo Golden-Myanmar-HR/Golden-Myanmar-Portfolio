@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navigation = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { t } = useTranslation();
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -11,10 +14,10 @@ const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
-    { label: "Home", href: "/" },
-    { label: "About Golden Myanmar HR", href: "/about" },
-    { label: "Services", href: "/services" },
-    { label: "Contact Us", href: "/contact" },
+    { label: t("nav.home"), href: "/" },
+    { label: t("nav.about"), href: "/about" },
+    { label: t("nav.services"), href: "/services" },
+    { label: t("nav.contact"), href: "/contact" },
   ];
 
   const drawer = (
@@ -49,23 +52,11 @@ const Navigation = () => {
           </li>
         ))}
         <li className="mt-4">
-          <div className="flex items-center gap-2">
-            <img
-              src="/images/myanmar-flag.png"
-              alt="Myanmar"
-              className="w-6 h-4 rounded"
-            />
-            <span
-              className="font-semibold text-xs"
-              style={{ fontFamily: "Noto Sans Myanmar, sans-serif" }}
-            >
-              မြန်မာ
-            </span>
-          </div>
+          <LanguageSwitcher />
         </li>
         <li>
-          <button className="w-full text-black font-semibold py-3 px-4 rounded-xl hover:bg-[#e6d088] transition-colors">
-            Let's Work Together
+          <button className="w-full border-2 border-[#1E1E1E] hover:bg-black hover:text-[#F5E49D] font-semibold py-3 px-4 rounded-xl hover:bg-[#e6d088] transition-colors">
+            {t("nav.workTogether")}
           </button>
         </li>
       </ul>
@@ -74,23 +65,23 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className="bg-[#F5E49D] text-black shadow-none">
-        <div className="px-4 lg:px-16 py-4">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#F5E49D] text-black shadow-lg">
+        <div className="px-5 py-1">
           <div className="flex items-center justify-between gap-8">
             <img
               src="/images/logo.png"
               alt="Golden Myanmar HR"
-              className="h-14"
+              className="h-24"
             />
 
-            <div className="hidden lg:flex items-center space-x-8 ">
+            <div className="nav-md:hidden nav-lg:flex items-center space-x-8 ">
               {navItems.map((item) => {
                 const isActive = location.pathname === item.href;
                 return (
                   <Link
                     key={item.label}
                     to={item.href}
-                    className={`font-semibold text-base transition-colors ${
+                    className={`font-semibold text-base text-[16px] transition-colors ${
                       isActive
                         ? "text-black font-bold"
                         : "text-gray-500 hover:text-black"
@@ -102,27 +93,15 @@ const Navigation = () => {
               })}
             </div>
 
-            <div className="hidden lg:flex items-center space-x-6">
-              <div className="flex items-center gap-2">
-                <img
-                  src="/images/myanmar-flag.png"
-                  alt="Myanmar"
-                  className="w-6 h-4 rounded-full"
-                />
-                <span
-                  className="font-semibold text-xs"
-                  style={{ fontFamily: "Noto Sans Myanmar, sans-serif" }}
-                >
-                  မြန်မာ
-                </span>
-              </div>
-              <button className="text-[#1E1E1E] font-semibold border-2 border-[#1E1E1E] py-2 px-4 rounded-xl hover:bg-gray-800 transition-colors">
-                Let's Work Together
+            <div className="nav-md:hidden nav-lg:flex items-center space-x-6">
+              <LanguageSwitcher />
+              <button className="text-[#1E1E1E] font-semibold border-2 border-[#1E1E1E] py-2 px-4 rounded-xl hover:bg-gray-800 hover:text-[#F5E49D] transition-colors duration-300">
+                {t("nav.workTogether")}
               </button>
             </div>
 
             <button
-              className="md:hidden p-2"
+              className="nav-lg:hidden nav-md:block p-2"
               onClick={handleDrawerToggle}
               aria-label="open drawer"
             >
@@ -145,7 +124,7 @@ const Navigation = () => {
       </nav>
 
       {mobileOpen && (
-        <div className="fixed inset-0 z-50 md:hidden">
+        <div className="fixed inset-0 z-50 nav-lg:hidden nav-md:block">
           <div className="fixed" onClick={handleDrawerToggle}></div>
           <div className="fixed right-0 top-0 h-full w-72 bg-white shadow-xl">
             {drawer}

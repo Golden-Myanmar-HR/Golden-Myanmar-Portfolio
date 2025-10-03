@@ -1,38 +1,41 @@
 import React from "react";
 import { BsPersonRaisedHand, BsHammer, BsFlag } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 
 const AchievementsSection = () => {
+  const { t } = useTranslation();
+
   const achievements = [
     {
-      title: "Tokutei Workers (Elderly Care)",
+      title: t("achievements.achievements.0.title"),
       image: "/images/tokutei-trainees.jpg",
     },
     {
-      title: "Construction Trainees",
+      title: t("achievements.achievements.1.title"),
       image: "/images/ach1.jpg",
     },
     {
-      title: "Agriculture Trainees",
+      title: t("achievements.achievements.2.title"),
       image: "/images/ach2.jpg",
     },
   ];
 
   const stats = [
     {
-      title: "Tokutei (Elderly Care)",
-      count: "3 Tokutei Workers",
+      title: t("achievements.stats.0.title"),
+      count: t("achievements.stats.0.count"),
       icon: BsPersonRaisedHand,
       image: "/images/traning1.png",
     },
     {
-      title: "Construction",
-      count: "8 Interns Trainees",
+      title: t("achievements.stats.1.title"),
+      count: t("achievements.stats.1.count"),
       icon: BsHammer,
       image: "/images/traning2.png",
     },
     {
-      title: "Agriculture",
-      count: "4 Interns Trainees",
+      title: t("achievements.stats.2.title"),
+      count: t("achievements.stats.2.count"),
       icon: BsFlag,
       image: "/images/taning3.png",
     },
@@ -44,20 +47,11 @@ const AchievementsSection = () => {
         <div className="space-y-16">
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-semibold text-black">
-              Our Achievements
+              {t("achievements.title")}
             </h2>
 
-            <p className="text-lg md:text-xl text-[#1e1e1e] font-semibold leading-relaxed">
-              During our first quarter of operations, we successfully selected
-              12 intern trainees from a large number of candidates for the
-              construction and agricultural industries. Then, after interviewing
-              a group of candidates, the following three specific skilled
-              workers (Tokutei) are successfully chosen for elderly care. This
-              achievement was made possible through effective collaboration with
-              our own language school and our partner language schools. We have
-              established a Japanese Language School in collaboration with our
-              overseas employment services to support selected candidates who
-              are preparing to work in Japan.
+            <p className="text-lg md:text-xl text-[#1e1e1e] text-justify font-semibold leading-[2]">
+              {t("achievements.description")}
             </p>
           </div>
 
