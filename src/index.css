@@ -51,6 +51,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", "Inter", "Noto Sans Myanmar", sans-serif;
+  /* line-height: 1.8/; */
 }
 
 /* Custom utilities for Tailwind v4 */

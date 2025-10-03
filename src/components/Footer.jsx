@@ -40,10 +40,23 @@ const Footer = () => {
             </p>
 
             <div className="flex space-x-4">
-              <button className="cursor-pointer hover:scale-110 transition-all duration-300">
+              <button
+                onClick={() =>
+                  window.open("viber://chat?number=+959791602729", "_blank")
+                }
+                className="cursor-pointer hover:scale-110 transition-all duration-300"
+              >
                 <img src="/images/viber.png" alt="Viber" className="w-8 h-8" />
               </button>
-              <button className="cursor-pointer hover:scale-110 transition-all duration-300">
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://www.facebook.com/share/p/1FjXjMBRyZ",
+                    "_blank"
+                  )
+                }
+                className="cursor-pointer hover:scale-110 transition-all duration-300"
+              >
                 <img
                   src="/images/facebook.png"
                   alt="Facebook"

@@ -72,7 +72,7 @@ function OurProcess() {
     <section className="py-16 bg-[#FFFBEF]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
-          <h2 className=" leading-[1.5] text-xl md:text-2xl lg:text-4xl font-bold  mb-6">
+          <h2 className="leading-[2] max-w-3xl text-xl md:text-2xl lg:text-4xl  font-bold mb-10">
             {t("ourProcess.title")}
           </h2>
           <p className="text-base leading-[2] text-justify font-semibold text-lg md:text-xl lg:text-[24px] text-[#1E1E1E]">
