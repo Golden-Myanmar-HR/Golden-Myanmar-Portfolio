@@ -6,13 +6,13 @@ const CTASection = () => {
 
   return (
     <section
-      className="relative h-[500px] lg:h-[700px] flex items-center justify-center bg-cover bg-center overflow-hidden"
+      className="relative h-[500px] lg:h-[600px] flex items-center justify-center lg:justify-end bg-cover bg-center overflow-hidden"
       style={{ backgroundImage: "url(/images/cta.jpg)" }}
     >
       <div className="absolute inset-0 bg-black/50 z-10"></div>
-      <div className="max-w-4xl lg:translate-x-[30%] mx-auto px-4 relative z-20 text-white">
+      <div className="max-w-4xl me-0 ms-5 lg:ms-0 lg:me-10 relative z-20 text-white">
         <div className="space-y-8">
-          <h1 className="text-3xl md:text-5xl font-semibold max-w-[800px] leading-[1.8] mx-auto">
+          <h1 className="text-3xl md:text-4xl font-semibold max-w-[750px] leading-[1.8] mx-auto">
             {t("cta.title")}
           </h1>
 

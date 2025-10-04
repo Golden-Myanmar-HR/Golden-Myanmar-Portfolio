@@ -21,7 +21,7 @@ const OurService = () => {
                   className="w-full h-80 object-cover"
                 />
               </div>
-              <div className="px-6 py-10 flex justify-center items-center">
+              <div className="px-6 py-6 md:px-14 md:py-10 flex justify-center items-center">
                 <div>
                   <h3 className="text-xl lg:text-[28px] leading-[1.8] font-semibold text-black mb-5">
                     {t("ourService.services.0.title")}
@@ -38,9 +38,9 @@ const OurService = () => {
               <img
                 src={t("ourService.services.1.image")}
                 alt={t("ourService.services.1.alt")}
-                className="w-full h-72 object-cover rounded-lg mb-4"
+                className="w-full h-72 object-cover rounded-lg"
               />
-              <div className="p-6">
+              <div className="py-6 px-6 md:py-10 md:px-14">
                 <h3
                   className={`text-xl lg:text-[28px] leading-[1.8] font-semibold text-black mb-5`}
                 >
@@ -56,9 +56,9 @@ const OurService = () => {
               <img
                 src={t("ourService.services.2.image")}
                 alt={t("ourService.services.2.alt")}
-                className="w-full h-72 object-cover rounded-lg mb-4"
+                className="w-full h-72 object-cover rounded-lg"
               />
-              <div className="p-6">
+              <div className="py-6 px-6 md:py-10 md:px-14">
                 <h3 className="text-xl lg:text-[28px] leading-[1.8] font-semibold text-black mb-5">
                   {t("ourService.services.2.title")}
                 </h3>

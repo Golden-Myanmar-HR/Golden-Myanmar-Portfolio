@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
 
@@ -43,12 +43,16 @@ const Navigation = () => {
       <ul className="space-y-4">
         {navItems.map((item) => (
           <li key={item.label} onClick={handleDrawerToggle}>
-            <Link
+            <NavLink
               to={item.href}
-              className="block text-black font-semibold text-base hover:text-gray-600 transition-colors"
+              className={({ isActive }) =>
+                isActive
+                  ? "block text-black font-semibold text-base hover:text-gray-600 transition-colors"
+                  : "block text-gray-500 font-semibold text-base hover:text-gray-600 transition-colors"
+              }
             >
               {item.label}
-            </Link>
+            </NavLink>
           </li>
         ))}
         <li className="mt-4">
@@ -66,7 +70,7 @@ const Navigation = () => {
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#F5E49D] text-black shadow-lg">
-        <div className="px-5 py-1">
+        <div className="lg:px-10 px-5 py-1">
           <div className="flex items-center justify-between gap-8">
             <img
               src="/images/logo.png"
@@ -74,11 +78,11 @@ const Navigation = () => {
               className="h-24"
             />
 
-            <div className="nav-md:hidden nav-lg:flex items-center space-x-8 ">
+            <div className="nav-md:hidden nav-lg:flex items-center space-x-8 ms-0 lg:ms-18">
               {navItems.map((item) => {
                 const isActive = location.pathname === item.href;
                 return (
-                  <Link
+                  <NavLink
                     key={item.label}
                     to={item.href}
                     className={`font-semibold text-base text-[16px] transition-colors ${
@@ -88,7 +92,7 @@ const Navigation = () => {
                     }`}
                   >
                     {item.label}
-                  </Link>
+                  </NavLink>
                 );
               })}
             </div>

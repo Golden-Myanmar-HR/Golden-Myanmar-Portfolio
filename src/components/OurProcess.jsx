@@ -103,7 +103,7 @@ function OurProcess() {
                           <div className="bg-[#FFDE59] text-black w-8 h-8 rounded-full flex items-center justify-center text-base font-semibold flex-shrink-0 mt-1">
                             {itemIndex + 1}
                           </div>
-                          <span className="text-[#1E1E1E] font-medium max-w-md text-[20px]">
+                          <span className="text-[#1E1E1E] font-medium max-w-md lg:text-[20px]">
                             {item}
                           </span>
                         </li>

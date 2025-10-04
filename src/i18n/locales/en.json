@@ -117,7 +117,7 @@
   },
   "aboutHero": {
     "title": "Your Gateway to Global Career Opportunities",
-    "subtitle": "We Focused on connecting talented people with Job opportunities and build a Successful Career.",
+    "subtitle": "We focused on connecting talented people with Job opportunities and build a Successful Career.",
     "button": "Let's Work Together"
   },
   "aboutCompany": {
@@ -171,8 +171,8 @@
     ]
   },
   "serviceHero": {
-    "title": "Your Gateway to Global Career Opportunities",
-    "subtitle": "We Focused on connecting talented people with Job opportunities and build a Successful Career.",
+    "title": "Your most trusted and dedicated partner",
+    "subtitle": "We focused on connecting talented people with Job opportunities and build a Successful Career.",
     "button": "Let's Work Together"
   },
   "ourService": {
@@ -185,7 +185,7 @@
         "alt": "Recruitment & Placement training session"
       },
       {
-        "title": "Technical Intern Training System",
+        "title": "Technical Intern Training Worker System",
         "description": "The Technical Intern Training System provides opportunities for Myanmar nationals to develop technical knowledge and practical skills in Japan. After completing the program, trainees are expected to contribute these skills towards the advancement of their home countries' economies.",
         "image": "/images/serviceSection/service3.png",
         "alt": "Specified skilled workers in construction"
@@ -254,8 +254,8 @@
     ]
   },
   "contactSection": {
-    "title": "We invite Japanese human resource recruitment companies to partner with Golden Myanmar Human Resources Co., Ltd. We invite those who want to work abroad to join us for a brighter future.",
-    "button": "Contact by email"
+    "title": "We warmly welcome Japanese manpower companies to partner with Us. We invite those seeking work abroad to join us for a brighter future.",
+    "button": "Contact Us  Via Email"
   },
   "contact": {
     "title": "Contact Us",

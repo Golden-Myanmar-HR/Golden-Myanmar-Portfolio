@@ -27,7 +27,7 @@ const ServicesSection = () => {
   return (
     <section className="bg-[#f5e49d] py-20">
       <div className="max-w-7xl mx-auto px-4 lg:px-16">
-        <div className="flex  justify-between items-start gap-8 mb-8">
+        <div className="flex justify-between items-start gap-8 mb-8">
           {/* <div className="flex ju space-y-6"> */}
           <h2 className="text-2xl md:text-4xl font-semibold text-black max-w-xl">
             {t("services.section.title")}
@@ -35,7 +35,7 @@ const ServicesSection = () => {
 
           <button
             onClick={() => navigate("/services")}
-            className="bg-white text-black text-base font-semibold px-6 py-3 rounded-2xl hover:bg-black hover:text-[#f5e49d] transition-all duration-300"
+            className="hidden md:block bg-white text-black text-base font-semibold px-6 py-3 rounded-2xl hover:bg-black hover:text-[#f5e49d] transition-all duration-300"
           >
             {t("services.section.button")}
           </button>
@@ -45,6 +45,13 @@ const ServicesSection = () => {
         <p className="text-lg md:text-xl text-justify text-[#1e1e1e] font-semibold leading-relaxed">
           {t("services.section.description")}
         </p>
+
+        <button
+          onClick={() => navigate("/services")}
+          className="md:hidden bg-white mt-5 text-black text-base font-semibold px-6 py-3 rounded-2xl hover:bg-black hover:text-[#f5e49d] transition-all duration-300"
+        >
+          {t("services.section.button")}
+        </button>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
           {services.map((service, index) => (
