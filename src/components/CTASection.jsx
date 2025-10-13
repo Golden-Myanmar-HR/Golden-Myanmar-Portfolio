@@ -16,7 +16,12 @@ const CTASection = () => {
             {t("cta.title")}
           </h1>
 
-          <button className="bg-[#f5e49d] text-black text-lg font-semibold py-4 px-10 rounded-2xl hover:bg-[#e6d088] hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
+          <button
+            onClick={() =>
+              window.open("viber://chat?number=+959791602729", "_blank")
+            }
+            className="bg-[#f5e49d] text-black text-lg font-semibold py-4 px-10 rounded-2xl hover:bg-[#e6d088] hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300"
+          >
             {t("cta.button")}
           </button>
         </div>

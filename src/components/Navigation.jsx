@@ -59,7 +59,12 @@ const Navigation = () => {
           <LanguageSwitcher />
         </li>
         <li>
-          <button className="w-full border-2 border-[#1E1E1E] hover:bg-black hover:text-[#F5E49D] font-semibold py-3 px-4 rounded-xl hover:bg-[#e6d088] transition-colors">
+          <button
+            onClick={() =>
+              window.open("viber://chat?number=+959791602729", "_blank")
+            }
+            className="w-full border-2 border-[#1E1E1E] hover:bg-black hover:text-[#F5E49D] font-semibold py-3 px-4 rounded-xl hover:bg-[#e6d088] transition-colors"
+          >
             {t("nav.workTogether")}
           </button>
         </li>
@@ -99,7 +104,12 @@ const Navigation = () => {
 
             <div className="nav-md:hidden nav-lg:flex items-center space-x-6">
               <LanguageSwitcher />
-              <button className="text-[#1E1E1E] font-semibold border-2 border-[#1E1E1E] py-2 px-4 rounded-xl hover:bg-gray-800 hover:text-[#F5E49D] transition-colors duration-300">
+              <button
+                onClick={() =>
+                  window.open("viber://chat?number=+959791602729", "_blank")
+                }
+                className="text-[#1E1E1E] font-semibold border-2 border-[#1E1E1E] py-2 px-4 rounded-xl hover:bg-gray-800 hover:text-[#F5E49D] transition-colors duration-300"
+              >
                 {t("nav.workTogether")}
               </button>
             </div>

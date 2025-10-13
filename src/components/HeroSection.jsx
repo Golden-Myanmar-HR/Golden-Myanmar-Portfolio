@@ -17,7 +17,12 @@ const HeroSection = () => {
               {t("hero.subtitle")}
             </p>
 
-            <button className="bg-white text-[#00000] text-base font-semibold py-4 px-8 rounded-2xl hover:bg-gray-800 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
+            <button
+              onClick={() =>
+                window.open("viber://chat?number=+959791602729", "_blank")
+              }
+              className="bg-white text-[#00000] text-base font-semibold py-4 px-8 rounded-2xl hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300"
+            >
               {t("hero.cta")}
             </button>
           </div>

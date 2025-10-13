@@ -2,14 +2,19 @@ import React from "react";
 import { MdOutlinePhone, MdOutlineEmail } from "react-icons/md";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { TiLocationOutline } from "react-icons/ti";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
+  const location = useLocation();
 
   const usefulLinks = [
+    {
+      label: t("nav.home"),
+      href: "/",
+    },
     {
       label: t("nav.about"),
       href: "/about",
@@ -73,13 +78,17 @@ const Footer = () => {
 
             <div className="space-y-4">
               {usefulLinks.map((link, index) => (
-                <NavLink
-                  key={index}
-                  to={link.href}
-                  className="block text-base text-gray-600 hover:text-black transition-colors"
-                >
-                  {link.label}
-                </NavLink>
+                <>
+                  {location.pathname !== link.href ? (
+                    <NavLink
+                      key={index}
+                      to={link.href}
+                      className="block text-base text-gray-600 hover:text-black transition-colors"
+                    >
+                      {link.label}
+                    </NavLink>
+                  ) : null}
+                </>
               ))}
             </div>
           </div>

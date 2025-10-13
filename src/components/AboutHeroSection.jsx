@@ -23,7 +23,12 @@ const AboutHeroSection = () => {
               {t("aboutHero.subtitle")}
             </p>
 
-            <button className="bg-[#fff] text-black text-base font-semibold py-4 px-8 rounded-2xl hover:bg-[#e6d088] hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
+            <button
+              onClick={() =>
+                window.open("viber://chat?number=+959791602729", "_blank")
+              }
+              className="bg-[#fff] text-black text-base font-semibold py-4 px-8 rounded-2xl hover:bg-[#e6d088] hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300"
+            >
               {t("aboutHero.button")}
             </button>
           </div>
