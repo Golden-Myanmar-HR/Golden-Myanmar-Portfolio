@@ -32,15 +32,15 @@ const Footer = () => {
   return (
     <footer className="bg-[#FFFBEF] pt-16 pb-8 border-t border-gray-200">
       <div className="mx-auto px-4 lg:px-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12">
-          <div className="space-y-6 col-span-1 lg:col-span-2">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
+          <div className="space-y-6 col-span-1   lg:col-span-2">
             <img
               src="/images/logo.png"
               alt="Golden Myanmar HR"
               className="h-24 w-auto"
             />
 
-            <p className="text-base text-justify font-semibold text-black leading-relaxed max-w-md">
+            <p className="text-base text-justify font-semibold text-black leading-relaxed lg:max-w-md">
               {t("footer.description")}
             </p>
 

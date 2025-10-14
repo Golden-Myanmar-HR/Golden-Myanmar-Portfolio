@@ -13,7 +13,7 @@ const ServiceHeroSection = () => {
         }}
       >
         <div className="absolute inset-0 bg-black/50 z-10"></div>
-        <div className="max-w-3xl px-4 relative ps-20 z-20 text-white">
+        <div className="max-w-3xl px-4 relative md:ps-20 z-20 text-white">
           <div className="space-y-8">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-[2]">
               {t("serviceHero.title")}
