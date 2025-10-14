@@ -37,7 +37,7 @@ const Footer = () => {
             <img
               src="/images/logo.png"
               alt="Golden Myanmar HR"
-              className="h-16 w-auto"
+              className="h-24 w-auto"
             />
 
             <p className="text-base text-justify font-semibold text-black leading-relaxed max-w-md">
@@ -99,15 +99,22 @@ const Footer = () => {
             </h6>
 
             <div className="space-y-6">
-              <div className="flex cursor-pointer items-center space-x-3">
+              <a
+                h
+                href="tel:+959791602729"
+                className="flex cursor-pointer items-center space-x-3 hover:text-gray-600 transition-colors"
+              >
                 <MdOutlinePhone width={24} height={24} color="#000000" />
                 <span className="text-base">+959 791602729</span>
-              </div>
+              </a>
 
-              <div className="flex cursor-pointer items-center space-x-3">
+              <a
+                href="mailto:goldenmmhr@gmail.com"
+                className="flex cursor-pointer items-center space-x-3 hover:text-gray-600 transition-colors"
+              >
                 <MdOutlineEmail width={24} height={24} color="#000000" />
                 <span className="text-base">goldenmmhr@gmail.com</span>
-              </div>
+              </a>
 
               <div className="flex cursor-pointer space-x-3">
                 <div>
