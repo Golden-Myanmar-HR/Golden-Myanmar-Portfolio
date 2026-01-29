@@ -9,7 +9,7 @@ const LanguageSwitcher = () => {
   const languages = [
     { code: "en", name: "English", flag: "/images/eng.png" },
     { code: "mm", name: "မြန်မာ", flag: "/images/myanmar-flag.png" },
-    { code: "ja", name: "日本語", flag: "/images/japan-flag.png" },
+    { code: "ja", name: "日本語", flag: "/images/japan.png" },
   ];
 
   const currentLanguage =
@@ -30,19 +30,19 @@ const LanguageSwitcher = () => {
           <img
             src="/images/myanmar-flag.png"
             alt="Myanmar"
-            className="w-4 h-4 rounded-full"
+            className="w-6 h-4 rounded"
           />
         ) : currentLanguage.code === "ja" ? (
           <img
-            src="/images/japan-flag.png"
+            src="/images/japan.png"
             alt="Japanese"
-            className="w-4 h-4 rounded-full"
+            className="w-6 h-4 rounded"
           />
         ) : (
           <img
             src="/images/eng.png"
             alt="English"
-            className="w-4 h-4 rounded-full"
+            className="w-6 h-4 rounded"
           />
         )}
         <span
@@ -92,7 +92,7 @@ const LanguageSwitcher = () => {
                 />
               ) : language.code === "ja" ? (
                 <img
-                  src="/images/japan-flag.png"
+                  src="/images/japan.png"
                   alt="Japanese"
                   className="w-6 h-4 rounded"
                 />

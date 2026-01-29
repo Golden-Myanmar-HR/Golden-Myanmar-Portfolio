@@ -5,9 +5,9 @@ const HeroSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-[#f5e49d] min-h-[80vh] flex items-center relative overflow-hidden">
-      <div className="py-16 px-4 lg:ps-42 ">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+    <section className="bg-[#f5e49d] min-h-[80vh] flex items-center justify-center relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 lg:px-16 py-16">
+        <div className="flex flex-col lg:flex-row lg:items-center gap-8">
           <div className="flex-1 space-y-8">
             <h1 className="text-3xl md:text-4xl max-w-[550px] lg:text-[40px] font-semibold leading-[1.5] text-black">
               {t("hero.title")}
