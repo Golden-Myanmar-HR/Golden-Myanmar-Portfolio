@@ -9,6 +9,7 @@ const LanguageSwitcher = () => {
   const languages = [
     { code: "en", name: "English", flag: "/images/eng.png" },
     { code: "mm", name: "မြန်မာ", flag: "/images/myanmar-flag.png" },
+    { code: "ja", name: "日本語", flag: "/images/japan-flag.png" },
   ];
 
   const currentLanguage =
@@ -31,6 +32,12 @@ const LanguageSwitcher = () => {
             alt="Myanmar"
             className="w-4 h-4 rounded-full"
           />
+        ) : currentLanguage.code === "ja" ? (
+          <img
+            src="/images/japan-flag.png"
+            alt="Japanese"
+            className="w-4 h-4 rounded-full"
+          />
         ) : (
           <img
             src="/images/eng.png"
@@ -43,7 +50,9 @@ const LanguageSwitcher = () => {
           style={
             currentLanguage.code === "mm"
               ? { fontFamily: "Noto Sans Myanmar, sans-serif" }
-              : {}
+              : currentLanguage.code === "ja"
+                ? { fontFamily: "Noto Sans JP, sans-serif" }
+                : {}
           }
         >
           {currentLanguage.name}
@@ -81,6 +90,12 @@ const LanguageSwitcher = () => {
                   alt="Myanmar"
                   className="w-6 h-4 rounded"
                 />
+              ) : language.code === "ja" ? (
+                <img
+                  src="/images/japan-flag.png"
+                  alt="Japanese"
+                  className="w-6 h-4 rounded"
+                />
               ) : (
                 <img
                   src="/images/eng.png"
@@ -93,7 +108,9 @@ const LanguageSwitcher = () => {
                 style={
                   language.code === "mm"
                     ? { fontFamily: "Noto Sans Myanmar, sans-serif" }
-                    : {}
+                    : language.code === "ja"
+                      ? { fontFamily: "Noto Sans JP, sans-serif" }
+                      : {}
                 }
               >
                 {language.name}
