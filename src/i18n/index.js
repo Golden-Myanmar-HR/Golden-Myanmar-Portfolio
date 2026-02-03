@@ -21,13 +21,13 @@ i18n
         translation: jaTranslations,
       },
     },
-    fallbackLng: "en",
+    fallbackLng: "ja",
     debug: false,
     interpolation: {
       escapeValue: false,
     },
     detection: {
-      order: ["localStorage", "navigator", "htmlTag"],
+      order: ["htmlTag", "navigator", "localStorage"],
       caches: ["localStorage"],
     },
   });
